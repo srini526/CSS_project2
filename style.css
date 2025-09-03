@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: #f8f8f8;
+    position: relative;
+    padding-top: 1px;
+}
+#nav{
+    width: 100%;
+    height: 12vh;
+    margin-top: 40px;
+    background-color: #f8f8f8;
+    border: 2px solid #000;
+    border:2px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav h2{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid #000;
+    font-size: 22px;
+    font-weight: 500;
+    /* background-color: red; */
+}
+#nav h1{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: blue; */
+}
+#nav h2:nth-last-child(2){
+    width: 30%;
+}
+
+#nav h2:nth-last-child(1){
+    width: 10%;
+    border-right: none;
+}
+#center{
+    height: 90%;
+    width: 100%;
+    padding: 5vh;
+    position: relative;
+    /* background-color: aqua; */
+}
+#content{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background-color: bisque;
+}
+#content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#overley{
+    height: 52%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 3vw;
+    color: #fff;
+    background-color: rgba(10, 10, 10, 0.097);
+    backdrop-filter: blur(1px);
+}
+#over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2vw;
+}
+#over1 h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 3vw;
+    font-weight: 1000;
+    mix-blend-mode: difference;
+}
+#over1 h2{
+    font-size: 1vw;
+    padding: 1.8vw 2.1vw;
+    border-radius: 50%;
+    /* background-color: blue; */
+    border: 1px solid #fff;
+    mix-blend-mode: difference;
+}
+#over2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #fff;
+    padding: 1vw;
+}
+#over2 h3{
+    font-size: 1.3vw;
+    font-weight: 600;
+    mix-blend-mode: difference;
+}
+#over2 img{
+    height: 4vw;
+}
+#scrol{
+    height: 40vh;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    /* padding: 1vw;
+    background-color: aqua; */
+
+}
+#container{
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    padding:1vh;
+    /* background-color: aquamarine; */
+    animation-name: anime;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+#scrol img{
+    height: 80%;
+    width: 13.5%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: top;
+    margin: 1.5vw;   
+}
+
+@keyframes anime {
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+#alphabet{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.3vw;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+#alphabet h5{
+    font-size: 1.7vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 3px;
+    border-bottom: 1px solid #000000;
+}
+#alphabet h6{
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    padding: 0.5vw 0.7vw;
+    border-radius: 50%;
+    border: 1px solid #00000000;
+    cursor: pointer;
+    transition: ease 0.2s;
+}
+#alphabet h6:hover{
+    border: 1px solid #000;
+}
+#page2{
+    height: 120%;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vw 5vw;
+    gap: 2vw;
+}
+#part1{
+    height: 100%;
+    width: 50%;
+    background-image: url(https://images.unsplash.com/photo-1716670398210-df70e91e7c28?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+}
+#part2 {
+    height: 100%;
+    width: 46%;
+}
+#part2 img{
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    background-position: top;
+}
+#text{
+    display: flex;
+    gap: 1vw;
+    justify-content: center;
+    align-items: normal;
+}
