@@ -394,3 +394,34 @@ html , body{
         transform: translateX(calc(-100% - 20px));
     }
 }
+#blog{
+    height: 89%;
+    width: 100%;
+    display: flex;
+    padding: 4vw;
+    gap: 5vw;
+}
+#blog1{
+    height: 80%;
+    width: 40%;
+    background-color: antiquewhite;
+}
+#blog1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    /* display: none; */
+}
+#blog2{
+    height: 80%;
+    width: 40%;
+    /* background-color: antiquewhite; */
+}
+#blog2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+    /* display: none; */
+}
